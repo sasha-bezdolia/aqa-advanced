@@ -4,12 +4,21 @@
   "description": "hillel course - js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "eslint:all": "npx eslint .",
+    "prettier:fix": "npx prettier --write ."
   },
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
     "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.13.0",
+    "prettier": "3.4.2"
   }
 }
