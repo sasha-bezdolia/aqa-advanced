@@ -11,13 +11,13 @@ const num2 = 7;
 
 console.log('Result with "For" cycle:');
 for (let i = 1; i <= 10; i++) {
-  console.log(`${num1} x ${i} = ${num1 * i}`);
+	console.log(`${num1} x ${i} = ${num1 * i}`);
 }
 console.log('-----------');
 
 let j = 1;
 console.log('Result with "While" cycle:');
 while (j <= 10) {
-  console.log(`${num2} x ${j} = ${num2 * j}`);
-  j++;
+	console.log(`${num2} x ${j} = ${num2 * j}`);
+	j++;
 }

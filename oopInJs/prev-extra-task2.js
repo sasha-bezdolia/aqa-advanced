@@ -3,34 +3,34 @@
 
 // Write a method that takes the array as an argument and returns this 'outlier' N
 
-function isEven (num) {
-  return num % 2 === 0;
+function isEven(num) {
+	return num % 2 === 0;
 }
 
-function isOdd (num) {
-  return num % 2 !== 0;
+function isOdd(num) {
+	return num % 2 !== 0;
 }
 
-function findOutlierInt (array) {
-  let countOdd = 0;
-  let countEven = 0;
-  let resultArray;
+function findOutlierInt(array) {
+	let countOdd = 0;
+	let countEven = 0;
+	let resultArray;
 
-  for (let i = 0; i < array.length; i++) {
-      if (isEven(array[i])) {
-          countEven++;
-      } else {
-          countOdd++;
-      }
-  }
+	for (let i = 0; i < array.length; i++) {
+		if (isEven(array[i])) {
+			countEven++;
+		} else {
+			countOdd++;
+		}
+	}
 
-  if (countEven > countOdd) {
-      resultArray = array.filter((num) => isOdd(num))
-  } else {
-      resultArray = array.filter((num) => isEven(num));
-  }
+	if (countEven > countOdd) {
+		resultArray = array.filter((num) => isOdd(num));
+	} else {
+		resultArray = array.filter((num) => isEven(num));
+	}
 
-  return resultArray[0];
+	return resultArray[0];
 }
 
 // console.log(findOutlierInt([3, 1, 2, 5, 15]));

@@ -4,9 +4,9 @@
 // Функція повинна вивести в консоль переданий текст через вказану кількість мілісекунд
 
 function printWithDelay(text, delayTime) {
-    setTimeout(() => {
-        console.log(text);
-    }, delayTime);
-};
+	setTimeout(() => {
+		console.log(text);
+	}, delayTime);
+}
 
 printWithDelay('hello', 2000);

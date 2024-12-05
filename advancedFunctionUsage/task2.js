@@ -6,13 +6,13 @@
 // Фунція повинна викликатися, доки num не стане менше або рівне 0.
 // Викличте вашу функцію з аргументом, наприклад, 5, щоб почати рекурсивний лічильник.
 
-function logNumber (num) {
-  console.log(num);
+function logNumber(num) {
+	console.log(num);
 
-  num -= 1;
-  if (num > 0) {
-    logNumber (num);
-  }
+	num -= 1;
+	if (num > 0) {
+		logNumber(num);
+	}
 }
 
 logNumber(5);
