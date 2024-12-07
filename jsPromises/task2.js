@@ -15,26 +15,23 @@
 const baseUrl = 'https://jsonplaceholder.typicode.com';
 
 function requestTodo() {
-    
-    return fetch(`${baseUrl}/todos/1`)
-        .then(response => response.json())
-        .then(responseJson => console.log(responseJson))
-        .catch(error => {
-            console.error('Error in fetchTodo:', error);
-            throw error;
-        });
-    
+	return fetch(`${baseUrl}/todos/1`)
+		.then((response) => response.json())
+		.then((responseJson) => console.log(responseJson))
+		.catch((error) => {
+			console.error('Error in fetchTodo:', error);
+			throw error;
+		});
 }
 
 function requestUser() {
-    
-    return fetch(`${baseUrl}/users/1`)
-        .then(response => response.json())
-        .then(responseJson => console.log(responseJson))
-        .catch(error => {
-            console.error('Error in fetchUsers:', error);
-            throw error;
-        });   
+	return fetch(`${baseUrl}/users/1`)
+		.then((response) => response.json())
+		.then((responseJson) => console.log(responseJson))
+		.catch((error) => {
+			console.error('Error in fetchUsers:', error);
+			throw error;
+		});
 }
 
 const resPromAll = Promise.all([requestTodo(), requestUser()]);

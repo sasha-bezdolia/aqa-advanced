@@ -11,35 +11,33 @@
 // виведіть повідомлення "Робота завершена" в консоль, навіть якщо помилка виникла або не виникла.
 
 function divide(numerator, denominator) {
-  if (denominator === 0 ||
-    typeof numerator !== 'number' ||
-    typeof denominator !== 'number') {
-    throw new Error('Будь ласка, введіть валідні дані');
-  }
+	if (denominator === 0 || typeof numerator !== 'number' || typeof denominator !== 'number') {
+		throw new Error('Будь ласка, введіть валідні дані');
+	}
 
-  return numerator / denominator;
+	return numerator / denominator;
 }
 
 try {
-  console.log(divide(5, 1));
+	console.log(divide(5, 1));
 } catch {
-  console.log('Помилка! Не можна ділити на нуль або вводити літери');
+	console.log('Помилка! Не можна ділити на нуль або вводити літери');
 } finally {
-  console.log('Робота завершена');
+	console.log('Робота завершена');
 }
 
 try {
-  console.log(divide(5, 'd'));
+	console.log(divide(5, 'd'));
 } catch {
-  console.log('Помилка! Не можна ділити на нуль або вводити літери');
+	console.log('Помилка! Не можна ділити на нуль або вводити літери');
 } finally {
-  console.log('Робота завершена');
+	console.log('Робота завершена');
 }
 
 try {
-  console.log(divide(5, 0));
+	console.log(divide(5, 0));
 } catch {
-  console.log('Помилка! Не можна ділити на нуль або вводити літери');
+	console.log('Помилка! Не можна ділити на нуль або вводити літери');
 } finally {
-  console.log('Робота завершена');
+	console.log('Робота завершена');
 }

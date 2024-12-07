@@ -7,11 +7,11 @@
 // Floats with decimal part non equal to zero are considered UNeven for this kata.
 
 function testEven(n) {
-  if (n % 2 === 0) {
-    return true;
-  }
-  
-  return false;
+	if (n % 2 === 0) {
+		return true;
+	}
+
+	return false;
 }
 
 console.log(testEven(5));

@@ -5,13 +5,13 @@
 // Викличте вашу функцію з аргументами (наприклад 5 і 10 і виведіть результат (площу прямокутника) в консоль.
 // Реалізуйте функцію трьома способами (function declaration, function expression, arrow function)
 
-function calcTriangleArea (width, height) {
-  return width * height;
+function calcTriangleArea(width, height) {
+	return width * height;
 }
 
 const calcTriangleArea2 = function (width, height) {
-  return width * height;
-}
+	return width * height;
+};
 
 const calcTriangleArea3 = (width, height) => width * height;
 

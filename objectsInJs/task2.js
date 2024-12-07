@@ -10,9 +10,9 @@
 // Виведіть деструктуризовані змінні в консоль
 
 const book = {
-  title: 'Best served cold',
-  author: 'Joe Abercrombie',
-  year: 2009,
+	title: 'Best served cold',
+	author: 'Joe Abercrombie',
+	year: 2009,
 };
 
 const { title, author } = book;

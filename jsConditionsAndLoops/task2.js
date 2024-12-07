@@ -1,4 +1,3 @@
-
 // Завдання 2: Виконайте попереднє завдання але використовуючи конструкцію switch/case
 
 // Визначення рівня успішності студента
@@ -18,23 +17,23 @@ const averageGrade = 85;
 let successRate = '';
 
 switch (true) {
-  case (averageGrade < 60):
-    successRate = 'Незадовільно';
-    break;
-  case (averageGrade <= 70):
-    successRate = 'Задовільно';
-    break;
-  case (averageGrade <= 80):
-    successRate = 'Добре';
-    break;
-  case (averageGrade <= 90):
-    successRate = 'Дуже добре';
-    break;
-  case (averageGrade <= 100):
-    successRate = 'Відмінно';
-    break;
-  default:
-    console.log('Enter correct data, please');
+	case averageGrade < 60:
+		successRate = 'Незадовільно';
+		break;
+	case averageGrade <= 70:
+		successRate = 'Задовільно';
+		break;
+	case averageGrade <= 80:
+		successRate = 'Добре';
+		break;
+	case averageGrade <= 90:
+		successRate = 'Дуже добре';
+		break;
+	case averageGrade <= 100:
+		successRate = 'Відмінно';
+		break;
+	default:
+		console.log('Enter correct data, please');
 }
 
 console.log(`Рівень успішності студента "${successRate}"`);

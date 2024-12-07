@@ -7,12 +7,12 @@
 // ShortLongShort.solution("1", "22"); // returns "1221"
 // ShortLongShort.solution("22", "1"); // returns "1221"
 
-function solution(a, b){
-  if (a.length > b.length) {
-    return b + a + b;
-  }
-  
-  return a + b + a;
+function solution(a, b) {
+	if (a.length > b.length) {
+		return b + a + b;
+	}
+
+	return a + b + a;
 }
 
 console.log(solution('222', '55'));

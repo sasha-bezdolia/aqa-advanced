@@ -6,7 +6,7 @@
 const user1 = 'Alice';
 const user2 = 'Frank';
 const greetingsForUsers = 'Hello ' + user1 + ' and ' + user2 + '!';
-const greetingsForUsers2 = `Hello ${user1} and ${user2}!`
+const greetingsForUsers2 = `Hello ${user1} and ${user2}!`;
 
 console.log(greetingsForUsers);
 console.log(greetingsForUsers2);

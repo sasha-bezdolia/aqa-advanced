@@ -16,16 +16,16 @@
 //     Виведіть об'єкт car3 в консоль.
 
 const car1 = {
-  brand: 'Subaru',
-  model: 'Outback',
-  year: 2022,
-}
+	brand: 'Subaru',
+	model: 'Outback',
+	year: 2022,
+};
 
 const car2 = {
-  brand: 'Toyota',
-  model: 'RAV-4',
-  owner: 'Stepan Bandera',
-}
+	brand: 'Toyota',
+	model: 'RAV-4',
+	owner: 'Stepan Bandera',
+};
 
-const car3 = {...car1, ...car2};
+const car3 = { ...car1, ...car2 };
 console.log(car3);

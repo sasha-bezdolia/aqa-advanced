@@ -11,10 +11,10 @@
 //     Виведіть оновлений об'єкт person в консоль.
 
 const person = {
-  firstName: 'John',
-  lastName: 'Doe', 
-  age: 33,
-}
+	firstName: 'John',
+	lastName: 'Doe',
+	age: 33,
+};
 
 person.email = 'john.doe@gmail.com';
 delete person.age;
